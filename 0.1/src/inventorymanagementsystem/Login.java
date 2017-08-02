@@ -218,7 +218,7 @@ public class Login extends javax.swing.JFrame {
          PreparedStatement ps;
             
          try {   
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/products_db2", "root", "Dl9f693");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/products_db2", "root", "");
             ps = conn.prepareStatement("SELECT `username`, `password` FROM `users` WHERE `username` = ?AND `password` = ?");
             // It's `, NOT '
             ps.setString(1, txt_ID.getText());
