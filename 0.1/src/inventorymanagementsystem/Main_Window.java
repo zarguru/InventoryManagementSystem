@@ -57,7 +57,7 @@ public final class Main_Window extends javax.swing.JFrame {
         Connection con = null;
         
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost/products_db2","root","Dl9f693");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/products_db2","root","");
             return con;
         } catch (SQLException ex) {
             Logger.getLogger(Main_Window.class.getName()).log(Level.SEVERE, null, ex);
